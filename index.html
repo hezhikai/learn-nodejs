@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>node</title>
+</head>
+
+<body>
+    这是node主页
+    <br>
+    <form action="http://127.0.0.1:8081/process_get" method="GET">
+        First Name:
+        <input type="text" name="first_name">
+        <br> Last Name:
+        <input type="text" name="last_name">
+        <input type="submit" value="Submit-get">
+    </form>
+    <br>
+    <form action="http://127.0.0.1:8081/process_post" method="POST">
+        First Name:
+        <input type="text" name="first_name1">
+        <br> Last Name:
+        <input type="text" name="last_name1">
+        <input type="submit" value="Submit-post">
+    </form>
+    <br>
+    <form action="/file_upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" size="50" />
+        <br />
+        <input type="submit" value="上传文件" />
+    </form>
+    <script>
+    console.log('success');
+    </script>
+</body>
+
+</html>
